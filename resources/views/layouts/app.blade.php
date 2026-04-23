@@ -139,17 +139,16 @@
                 </a>
 
 
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-6 mb-2 px-4">Catálogos
-                    CASS
-                </div>
-
-
-
                 <a class="flex items-center gap-3 px-4 py-3.5 rounded-xl {{ request()->routeIs('reports.*') ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-slate-500 hover:bg-slate-50 hover:text-primary transition-all' }}"
                     href="{{ route('reports.index') }}">
                     <span class="material-symbols-outlined">analytics</span>
                     <span class="font-bold text-sm">Reportes CASS</span>
                 </a>
+
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-6 mb-2 px-4">Catálogos
+                    CASS
+                </div>
+
 
                 <a class="flex items-center gap-3 px-4 py-3.5 rounded-xl {{ request()->routeIs('agencies.*') ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-slate-500 hover:bg-slate-50 hover:text-primary transition-all' }}"
                     href="{{ route('agencies.index') }}">
