@@ -170,12 +170,15 @@
                         <span class="material-symbols-outlined text-primary font-variation-fill">person</span>
                     </div>
                     <div class="flex-1 min-w-0">
-                        <p class="text-sm font-bold text-slate-900 truncate">Admin User</p>
-                        <p class="text-[10px] text-primary font-black uppercase tracking-widest">Admin</p>
+                        <p class="text-sm font-bold text-slate-900 truncate">{{ Auth::user()->name ?? 'User' }}</p>
+                        <p class="text-[10px] text-primary font-black uppercase tracking-widest">User</p>
                     </div>
-                    <button class="text-slate-400 hover:text-red-500 transition-colors">
-                        <span class="material-symbols-outlined text-xl">logout</span>
-                    </button>
+                    <form method="POST" action="{{ route('logout') }}" class="inline flex items-center">
+                        @csrf
+                        <button type="submit" class="text-slate-400 hover:text-red-500 transition-colors pt-1">
+                            <span class="material-symbols-outlined text-xl">logout</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </aside>
