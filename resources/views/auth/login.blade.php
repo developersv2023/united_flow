@@ -6,6 +6,9 @@
         @csrf
 
         <div class="mb-8 text-center">
+            <div class="mb-4">
+                <span class="text-3xl font-extrabold tracking-tight text-slate-900 uppercase">United<span class="text-primary">Cargo</span></span>
+            </div>
             <h2 class="text-2xl font-black text-slate-900">Iniciar Sesión</h2>
             <p class="text-sm text-slate-500 mt-1 font-medium">Ingresa tus credenciales para continuar</p>
         </div>

@@ -64,14 +64,7 @@
             <!-- Decorative background elements -->
             <div class="absolute top-0 inset-x-0 h-64 bg-gradient-to-b from-primary/10 to-transparent z-0"></div>
 
-            <div class="z-10 mb-8">
-                <a href="/" class="flex flex-col items-center gap-4 group">
-                    <div class="flex size-16 items-center justify-center text-white bg-primary rounded-2xl shadow-xl shadow-primary/30 group-hover:scale-105 transition-transform duration-300">
-                        <span class="material-symbols-outlined text-4xl">language</span>
-                    </div>
-                    <span class="text-3xl font-extrabold tracking-tight text-slate-900 uppercase">United<span class="text-primary">Cargo</span></span>
-                </a>
-            </div>
+
 
             <div class="w-full sm:max-w-md px-10 py-12 bg-white custom-shadow border border-slate-100 overflow-hidden rounded-[2.5rem] z-10">
                 {{ $slot }}
